@@ -1,13 +1,6 @@
 import { API_URL } from './settings'
 
 const removeProduct = id =>
-  fetch(`${API_URL}/cart/${id}`, {
-    method: 'DELETE',
-    // params: id,
-    // body: JSON.stringify(data),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
+  fetch(`${API_URL}/cart/${id}`, { method: 'DELETE' })
 
 export default removeProduct
