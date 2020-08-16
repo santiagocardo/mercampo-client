@@ -15,8 +15,8 @@ const ShoppingList = () => {
   }, [setCart])
 
   return (
-    <div className="bg-gray-100 flex mx-auto w-full justify-around">
-      <ul className="flex flex-col p-4 md:m-4">
+    <div className="bg-gray-100 flex flex-wrap mx-auto w-full justify-around">
+      <ul className="flex flex-col p-4 md:m-2">
         {
           cart.length
             ? cart.map(item => <CartItem key={item._id} {...item} />)
@@ -24,7 +24,7 @@ const ShoppingList = () => {
         }
       </ul>
 
-      <div className="p-5 md:m-4 lg:flex">
+      <div className="p-5 md:m-2 lg:flex">
         <div className="">
           <div className="p-3 bg-gray-300 rounded-full">
             <h1 className="ml-2 font-bold">Order Details</h1>
