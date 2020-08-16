@@ -17,7 +17,7 @@
     "b:css": "postcss src/styles/index.css -o src/index.css",
     "w:css": "postcss src/styles/index.css -o src/index.css -w",
     "start": "npm run w:css & react-scripts start",
-    "build": "npm run b:ss && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
