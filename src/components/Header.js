@@ -32,6 +32,9 @@ const Header = () => {
           <div className="hidden lg:flex lg:items-center lg:w-auto w-full order-3 lg:order-2" id="menu">
             <nav>
               <ul className="lg:flex items-center text justify-between text-base font-bold text-gray-700 pt-4 lg:pt-0">
+                <li className="bg-gray-100 lg:bg-transparent rounded-md border-b-2 lg:border-b-0 border-gray-200">
+                  <Link className="inline-block no-underline hover:text-black rounded-lg lg:hover:bg-gray-200 transition ease-out duration-300 py-2 px-4 capitalize" to="/">Home</Link>
+                </li>
                 {
                   categories.map(({ name }) => (
                     <li key={name} className="bg-gray-100 lg:bg-transparent rounded-md border-b-2 lg:border-b-0 border-gray-200">
