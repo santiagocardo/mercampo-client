@@ -10,8 +10,9 @@ const Details = ({ path, id }) => {
   const { product, isError, isLoading } = useSingleProduct({ keyword, id })
 
   if (isError) return redirectTo("/")
+  if (isLoading) return <Spinner />
 
-  return isLoading ? <Spinner /> : <ProductDetails {...product} />
+  return product ? <ProductDetails {...product} /> : <Spinner />
 }
 
 export default Details

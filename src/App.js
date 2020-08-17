@@ -20,12 +20,12 @@ const App = () => {
         <ProductsContextProvider>
           <Router>
             <Home path="/" />
-            {
-              categories.map(({ name, title }) => <Products key={name} path={`/${name}`} title={title} />)
-            }
-            {
-              categories.map(({ name }) => <Details key={name} path={`/${name}/:id`} />)
-            }
+            <Products path="/fruits" title="Fruits 🥝" />
+            <Products path="/vegetables" title="Vegetables 🥬" />
+            <Products path="/organics" title="Organics 🥦" />
+            <Details path="/fruits/:id" />
+            <Details path="/vegetables/:id" />
+            <Details path="/organics/:id" />
             <Cart path="/cart" />
             <SearchResults path="/search/:keyword" />
           </Router>
