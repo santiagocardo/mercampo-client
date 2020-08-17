@@ -10,7 +10,6 @@ import SearchResults from './pages/SearchResults'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Cart from './pages/Cart'
-import categories from './constants/categories'
 
 const App = () => {
   return (
