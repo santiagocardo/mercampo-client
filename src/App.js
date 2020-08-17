@@ -26,7 +26,6 @@ const App = () => {
             {
               categories.map(({ name }) => <Details key={name} path={`/${name}/:id`} />)
             }
-            {/* <Details path="/product/:id" /> */}
             <Cart path="/cart" />
             <SearchResults path="/search/:keyword" />
           </Router>
